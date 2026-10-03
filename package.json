@@ -1,0 +1,37 @@
+{
+  "name": "agent-harness-ts",
+  "version": "1.0.0",
+  "description": "Deterministic runtime harness for non-deterministic AI agents, tool validation, context management, and failure recovery",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run tests/",
+    "eval": "tsx packages/evals/src/cli.ts",
+    "example": "tsx examples/research-agent/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "agent",
+    "harness",
+    "runtime",
+    "tool-calling",
+    "evals",
+    "deterministic",
+    "zod",
+    "typescript"
+  ],
+  "author": "Ali Furqon <masaligitu>",
+  "license": "MIT",
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.4.5",
+    "vitest": "^1.6.0"
+  }
+}
